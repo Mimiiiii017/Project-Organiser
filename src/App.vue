@@ -31,9 +31,9 @@ export default {
         <router-link to="/ViewProjects">My Projects</router-link>
       </div>
       <img
-        src="@/assets/burger.png"
+        src="@/assets/Burger.png"
         alt="Menu"
-        class="burger-icon"
+        class="Burger-icon"
         @click="toggleMenu"
       />
     </nav>
@@ -105,7 +105,7 @@ nav {
   cursor: pointer;
 }
 
-.burger-icon {
+.Burger-icon {
   height: 30px;
   margin-right: 20px;
   cursor: pointer;
