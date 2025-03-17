@@ -19,10 +19,10 @@ export default defineConfig({
       },
     },
   },
-  // Ensure GitHub Pages loads assets correctly
-  base: process.env.NODE_ENV === 'production' ? '/Project-Organiser/' : '/',
+  // ✅ Ensure correct base path for GitHub Pages
+  base: '/Project-Organiser/', // 👈 Change this to match your GitHub repo name
   build: {
-    assetsDir: 'assets',
-    outDir: 'dist', // Ensure the output directory is correct
+    assetsDir: 'assets', // Keeps assets organized
+    outDir: 'dist', // Ensure build output is in "dist"
   },
 });
