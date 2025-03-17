@@ -24,5 +24,5 @@ export default defineConfig({
     },
   },
   // Set the base path for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/Diy-Project-Organiser/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Project-Organiser/' : '/',
 });
