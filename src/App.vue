@@ -1,18 +1,16 @@
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-    },
-    goBack() {
-      this.$router.go(-1);
-    },
-  },
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const showMenu = ref(false);
+const router = useRouter();
+
+const toggleMenu = () => {
+  showMenu.value = !showMenu.value;
+};
+
+const goBack = () => {
+  router.go(-1);
 };
 </script>
 
@@ -31,9 +29,9 @@ export default {
         <router-link to="/ViewProjects">My Projects</router-link>
       </div>
       <img
-        src="@/assets/Burger.png"
+        src="@/assets/burger.png"
         alt="Menu"
-        class="Burger-icon"
+        class="burger-icon"
         @click="toggleMenu"
       />
     </nav>
@@ -105,7 +103,7 @@ nav {
   cursor: pointer;
 }
 
-.Burger-icon {
+.burger-icon {
   height: 30px;
   margin-right: 20px;
   cursor: pointer;

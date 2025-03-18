@@ -15,15 +15,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Home",
-  data() {
-    return {
-      showMessage: true,
-    };
-  },
-};
+<script setup>
+import { ref } from 'vue';
+
+const showMessage = ref(true);
 </script>
 
 <style>
